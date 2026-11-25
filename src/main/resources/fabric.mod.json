@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "chinhchuot",
+  "version": "1.1.0",
+  "name": "Chỉnh Chuột",
+  "description": "Sửa lỗi chuột bị xoay trục khi chơi trong map.",
+  "environment": "client",
+  "mixins": ["chinhchuot.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "1.21.11", "java": ">=21" }
+}

@@ -1,0 +1,18 @@
+plugins {
+    id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT'
+}
+
+version = '1.1.0'
+group = 'com.mihtam.chinhchuot'
+base { archivesName = 'chinhchuot' }
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.11'
+    mappings loom.officialMojangMappings()
+    modImplementation 'net.fabricmc:fabric-loader:0.18.4'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
